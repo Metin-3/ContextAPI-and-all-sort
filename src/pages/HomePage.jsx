@@ -2,6 +2,7 @@ import { useContext, useState } from 'react'
 import { DataContext } from '../context/DataProvider';
 import { Button, Card, Input } from 'antd';
 import Meta from 'antd/es/card/Meta';
+import { Link} from 'react-router-dom';
 
 const HomePage = () => {
     const { data, filteredData, setFilteredData } = useContext(DataContext);
@@ -88,6 +89,9 @@ const HomePage = () => {
                                 title={item.title}
                                 description={`${item.price} AZN`}
                             />
+                            <div style={{ textAlign: 'center', paddingTop: '20px' }}>
+                                <Link type='primary' to={`/${item.id}`}>Detail</Link>
+                            </div>
                         </Card>
                     </div>
                 ))}
