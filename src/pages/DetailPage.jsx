@@ -24,7 +24,7 @@ const DetailPage = () => {
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
             <Card
                 style={{ width: '80%', maxWidth: '600px' }}
-                cover={<img style={{ width: '100%', height: '300px', objectFit: 'cover' }} alt="image" src={product.image} />}
+                cover={<img style={{ width: '100%', height: '300px', objectFit: 'contain' }} alt="image" src={product.image} />}
             >
                 <h2>{product.title}</h2>
                 <p>{product.description}</p>
