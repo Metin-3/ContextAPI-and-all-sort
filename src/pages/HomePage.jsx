@@ -2,7 +2,7 @@ import { useContext, useState } from 'react'
 import { DataContext } from '../context/DataProvider';
 import { Button, Card, Input } from 'antd';
 import Meta from 'antd/es/card/Meta';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
     const { data, filteredData, setFilteredData } = useContext(DataContext);
@@ -50,7 +50,7 @@ const HomePage = () => {
         }
     };
     return (
-        <div>
+        <div style={{ overflow: 'hidden' }}>
             <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px', marginTop: "20px" }}>
                 <Input
                     style={{ width: '300px' }}
