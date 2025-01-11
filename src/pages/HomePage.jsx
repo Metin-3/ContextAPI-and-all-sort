@@ -83,7 +83,7 @@ const HomePage = () => {
                             style={{
                                 width: 240,
                             }}
-                            cover={<img style={{ width: '100%', height: '250px', objectFit: 'cover' }} alt="image" src={item.image} />}
+                            cover={<img style={{ width: '100%', height: '250px', objectFit: 'contain' }} alt="image" src={item.image} />}
                         >
                             <Meta
                                 title={item.title}
